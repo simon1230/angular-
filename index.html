@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="AngularStore">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Angular Store</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+</head>
+
+<body>
+   
+    <div class="container-fluid">
+        <div class="row-fluid">
+            <h1 class="well" style="position: relative;">
+        <a href="index.html"><img src="img/home-ico.png"/></a>
+             <span class="ziti">小麻包授权管理系统</span>
+             
+             <i style="position: absolute; right: 0; top: 0; font-size: 26px;">某某用户登录</i>
+             <a href="#" class="btn btn-default btn-sm my-buttn">个人资料</a>
+             <a href="#" class="btn btn-default btn-sm my-buttn">安全设置</a>
+             <a href="#" class="btn btn-default btn-sm my-buttn">退出登录</a>
+            </h1>
+        </div>
+    </div>
+
+    
+        <div class="container-fluid">
+            <div class="row-fluid">
+                <div class="col-lg-3 well" style="height: 800px;">
+                   <a href="#/yonghu" class="btn btn-primary btn-lg btn-info btn-block ggg">注册用户管理</a>
+                   <a href="#/gongsi" class="btn btn-primary btn-lg btn-info btn-block ggg">入驻企业管理</a>
+                </div>
+                <div class="col-lg-9 well" style="height: 800px; float: right; background: white;">
+                   <ng-view></ng-view>
+                </div>
+            </div>
+           
+        </div>
+    </div>
+    <script src="/js/libs/jquery.min.js"></script>
+    <script src="/js/libs/bootstrap.min.js"></script>
+    <script src="/js/libs/angular.min.js"></script>
+    <script src="/js/libs/angular-route.min.js"></script>
+
+     <script src="/js/app.js"></script>
+   
+   
+</body>
+
+</html>

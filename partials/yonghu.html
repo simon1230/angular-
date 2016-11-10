@@ -1,0 +1,38 @@
+<div class="">
+    <div class="page-header">
+        <h2 class="">注册用户管理</h2>
+    </div>
+   <!--  <form action="" class="form-inline">
+        用户参与ID
+        <input type="text" class="form-control thind" ng-model="search"> 昵称
+        <input type="text" class="form-control thind" ng-model="search1"> 注册渠道
+        <input type="text" class="form-control thind" ng-model="search2">
+         <button class="btn btn-primary">查询</button>
+    </form> -->
+    <search-show></search-show> 
+    <table class="table table-bordered table-responsive table-hover " style="margin-top: 15px;">
+        <tr class="well">
+            <td>用户ID</td>
+            <td>头像</td>
+            <td>昵称</td>
+            <td>注册渠道</td>
+            <td>操作{{search}}</td>
+        </tr>
+        <tr ng-repeat="message in messages | filter:search | filter:search1 | filter:search2 |limitTo :11">
+            <td class="tdCenter">{{message.id}}</td>
+            <td class="tdCenter"><img src="{{message.img}}" alt=""></td>
+            <td class="tdCenter">{{message.name}}</td>
+            <td class="tdCenter">{{message.place}}</td>
+            <td class="tdCenter"><a href="#/person/{{message.id}}">修改信息</a></td>
+        </tr>
+    </table>
+    <ul class="pagination myul">
+        <li><a href="#">&laquo;</a></li>
+        <li class="active"><a href="#">1</a></li>
+        <li class="disabled"><a href="#">2</a></li>
+        <li><a href="#">3</a></li>
+        <li><a href="#">4</a></li>
+        <li><a href="#">5</a></li>
+        <li><a href="#">&raquo;</a></li>
+    </ul>
+</div>

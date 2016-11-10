@@ -1,0 +1,33 @@
+<div class="container-fluid">
+    <h2 class="page-header">用户信息</h2>
+    <!-- <div>{{people.img}}</div> -->
+    <div style="margin-bottom: 50px;"><img src="{{people.imgbig}}" alt="" class="center-block img-thumbnail"></div>
+    <!-- <div>用户id:{{people.id}}</div> -->
+    <!--  用户名ID
+    <input type="text" value="{{people.id}}" class="form-control bbc"> 用户昵称
+    <input type="text" value="{{people.name}}" class="form-control bbc"> 注册渠道
+    <input type="text" value="{{people.place}}" class="form-control bbc"> -->
+    <div class="form-group">
+        <label for="firstname" class="col-sm-2 control-label mmm">用户名ID</label>
+        <div class="col-sm-10">
+            <input type="text" class="form-control bbc" id="firstname" value="{{people.id}}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="firstname" class="col-sm-2 control-label mmm">用户昵称</label>
+        <div class="col-sm-10">
+            <input type="text" class="form-control bbc " id="firstname" value="{{people.name}}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="firstname" class="col-sm-2 control-label mmm">注册渠道</label>
+        <div class="col-sm-10">
+            <input type="text" class="form-control bbc" id="firstname" value="{{people.place}}">
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-sm-offset-2 col-sm-10">
+            <button type="button" class="btn btn-default" style="margin-left: 300px;">修改</button>
+        </div>
+    </div>
+</div>
